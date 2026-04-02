@@ -1,0 +1,1353 @@
+{
+    "type": "bundle",
+    "id": "bundle--b4b37873-9452-506a-ba2d-1ada2645edf3",
+    "objects": [
+        {
+            "id": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "type": "identity",
+            "name": "Pulsedive",
+            "identity_class": "organization",
+            "sectors": [
+                "technology"
+            ],
+            "contact_information": "https:\/\/pulsedive.com\/",
+            "description": "Pulsedive is an analyst-centric threat intelligence platform built with on-demand scanning for live data, risk scoring to reduce false positives, and powerful integration capabilities for leveraging Pulsedive data inside your organization.",
+            "created": "2026-04-02T03:42:35.000Z",
+            "modified": "2026-04-02T03:42:35.000Z",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "extension-definition--c58a936d-f97f-545b-9646-434cc3382126",
+            "type": "extension-definition",
+            "name": "Pulsedive Indicator Extension",
+            "description": "This schema adds Pulsedive-specific properties to Indicator objects.",
+            "schema": "https:\/\/pulsedive.com\/api\/taxii",
+            "version": "1.0.0",
+            "extension_types": [
+                "toplevel-property-extension"
+            ],
+            "extension_properties": [
+                "pulsedive_risk",
+                "pulsedive_risk_int",
+                "pulsedive_retired",
+                "pulsedive_retired_timestamp",
+                "pulsedive_retired_reason"
+            ],
+            "created": "2026-04-02T03:42:35.000Z",
+            "modified": "2026-04-02T03:42:35.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1"
+        },
+        {
+            "id": "indicator--d23e656d-bdac-5168-9f12-000000031265",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 0,
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2017-09-29T06:19:50.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'doubleclick.net']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2017-09-29T06:19:50.000Z",
+            "modified": "2026-04-01T07:41:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--89fae454-82cc-5833-8ec6-000003126588",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2018-10-16T07:19:17.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'akamai.la']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2018-10-16T07:19:17.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--d6ecc98c-0323-5e52-99e5-000003154516",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T03:53:58.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2018-10-18T11:54:31.000Z",
+            "valid_until": "2024-03-21T03:53:58.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'mycopier.com.my']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2018-10-18T11:54:31.000Z",
+            "modified": "2024-03-21T03:53:58.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--39da6e09-3747-5d2e-9f69-000033432554",
+            "type": "indicator",
+            "pulsedive_risk": "medium",
+            "pulsedive_risk_int": 2,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-07-12T14:53:18.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Medium risk of malicious activity.",
+            "valid_from": "2022-03-30T15:46:59.000Z",
+            "valid_until": "2024-07-12T14:53:18.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '103.124.106.237']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2022-03-30T15:46:59.000Z",
+            "modified": "2024-07-12T14:53:18.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--f2b6f45d-15de-5a99-9c50-000037047538",
+            "type": "indicator",
+            "pulsedive_risk": "low",
+            "pulsedive_risk_int": 1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-24T08:59:18.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Low risk of malicious activity.",
+            "valid_from": "2022-07-10T10:10:40.000Z",
+            "valid_until": "2024-03-24T08:59:18.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '161.35.113.58']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2022-07-10T10:10:40.000Z",
+            "modified": "2024-03-24T08:59:18.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--89161b4e-a8a1-5cea-9622-000038175594",
+            "type": "indicator",
+            "pulsedive_risk": "medium",
+            "pulsedive_risk_int": 2,
+            "pulsedive_retired": 0,
+            "name": "Detection Pattern",
+            "description": "Medium risk of malicious activity.",
+            "valid_from": "2022-08-19T21:21:55.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'https:\/\/adclick.g.doubleclick.net\/pcs\/click']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2022-08-19T21:21:55.000Z",
+            "modified": "2026-04-01T03:48:36.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--8d392080-b182-5612-8096-000044244519",
+            "type": "indicator",
+            "pulsedive_risk": "medium",
+            "pulsedive_risk_int": 2,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:43.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Medium risk of malicious activity.",
+            "valid_from": "2023-02-01T00:26:57.000Z",
+            "valid_until": "2024-04-21T18:37:43.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '179.60.149.3']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-02-01T00:26:57.000Z",
+            "modified": "2024-04-21T18:37:43.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--33828e85-cb76-5d98-9826-000045075182",
+            "type": "indicator",
+            "pulsedive_risk": "medium",
+            "pulsedive_risk_int": 2,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:43.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Medium risk of malicious activity.",
+            "valid_from": "2023-02-24T07:43:23.000Z",
+            "valid_until": "2024-04-21T18:37:43.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '80.66.88.145']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-02-24T07:43:23.000Z",
+            "modified": "2024-04-21T18:37:43.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--c7343225-0a32-5daa-bf0c-000050161193",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:56:03.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:06.000Z",
+            "valid_until": "2023-11-13T23:56:03.000Z",
+            "pattern": "[url:value = 'https:\/\/acnanz.net\/hul0q']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:06.000Z",
+            "modified": "2023-11-13T23:56:03.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--043e5cf6-f244-561e-824c-000050161194",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:56:03.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:06.000Z",
+            "valid_until": "2023-11-13T23:56:03.000Z",
+            "pattern": "[url:value = 'https:\/\/gestionfuniko.com\/wui5s']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:06.000Z",
+            "modified": "2023-11-13T23:56:03.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--d8d6dd18-2334-5390-a536-000050161195",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:56:03.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:06.000Z",
+            "valid_until": "2023-11-13T23:56:03.000Z",
+            "pattern": "[url:value = 'https:\/\/tintrianalytics.com\/gmz4n']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:06.000Z",
+            "modified": "2023-11-13T23:56:03.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--2891d8db-ac47-5b06-93ed-000050161196",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:56:03.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:06.000Z",
+            "valid_until": "2023-11-13T23:56:03.000Z",
+            "pattern": "[url:value = 'https:\/\/tintrianalytics.com\/kjw7n']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:06.000Z",
+            "modified": "2023-11-13T23:56:03.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--cd62765f-c9e6-577c-9f9e-000050161197",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:56:03.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:06.000Z",
+            "valid_until": "2023-11-13T23:56:03.000Z",
+            "pattern": "[url:value = 'https:\/\/www.employersgroup.com\/zadzaf\/']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:06.000Z",
+            "modified": "2023-11-13T23:56:03.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--357b4bc2-7b64-54d2-a0bb-000050161198",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:51:42.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:07.000Z",
+            "valid_until": "2023-11-13T23:51:42.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'tintrianalytics.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:07.000Z",
+            "modified": "2023-11-13T23:51:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--45ba9a01-5dc9-56a3-a2a8-000050161200",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:51:42.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:09.000Z",
+            "valid_until": "2023-11-13T23:51:42.000Z",
+            "pattern": "[domain-name:value = 'gestionfuniko.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:09.000Z",
+            "modified": "2023-11-13T23:51:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--11bbe999-f055-5f8e-8e30-000050161247",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:51:42.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:37:21.000Z",
+            "valid_until": "2023-11-13T23:51:42.000Z",
+            "pattern": "[domain-name:value = 'acnanz.net']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:37:21.000Z",
+            "modified": "2023-11-13T23:51:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--288c4159-3bdb-5194-965a-000050161250",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:51:42.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:38:01.000Z",
+            "valid_until": "2023-11-13T23:51:42.000Z",
+            "pattern": "[domain-name:value = 'peterscustomusb.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:38:01.000Z",
+            "modified": "2023-11-13T23:51:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--1ff251bd-0851-5aef-a389-000050161251",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-11-13T23:51:42.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-08-11T13:38:01.000Z",
+            "valid_until": "2023-11-13T23:51:42.000Z",
+            "pattern": "[domain-name:value = 'viva2299.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:38:01.000Z",
+            "modified": "2023-11-13T23:51:42.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--518448c5-293d-5de5-a36a-000050161280",
+            "type": "indicator",
+            "pulsedive_risk": "critical",
+            "pulsedive_risk_int": 4,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-01-27T10:25:20.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very high risk of malicious activity.",
+            "valid_from": "2023-08-11T13:41:58.000Z",
+            "valid_until": "2024-01-27T10:25:20.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'http:\/\/80.66.88.145:7891\/']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-08-11T13:41:58.000Z",
+            "modified": "2024-01-27T10:25:20.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--21672d1f-28ca-5118-9787-000051097188",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-14T22:28:08.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-13T19:02:03.000Z",
+            "valid_until": "2023-12-14T22:28:08.000Z",
+            "pattern": "[ipv4-addr:value = '45.141.87.89']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-13T19:02:03.000Z",
+            "modified": "2023-12-14T22:28:08.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--2a280d27-1c90-5e92-b5a7-000051097189",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-13T19:02:03.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'bikeontop.shop']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-13T19:02:03.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--abd2d076-174e-5ca4-8537-000051097190",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-13T19:02:03.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'dreamteamup.shop']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-13T19:02:03.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--89c5e176-2752-524e-87f8-000051097191",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-13T19:02:03.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'positivereview.cloud']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-13T19:02:03.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--3c9b1ab3-67a6-5b6d-9f4e-000051097192",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-13T19:02:03.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'whatup.cloud']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-13T19:02:03.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--a2aeb2c9-bd71-54ba-b234-000051135223",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T03:53:58.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-14T21:50:30.000Z",
+            "valid_until": "2024-03-21T03:53:58.000Z",
+            "pattern": "[domain-name:value = 'winscphub.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-14T21:50:30.000Z",
+            "modified": "2024-03-21T03:53:58.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--3f2f0f0b-7ae1-5464-8ad5-000051204253",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-18T00:46:48.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-15T13:44:15.000Z",
+            "valid_until": "2023-12-18T00:46:48.000Z",
+            "pattern": "[ipv4-addr:value = '178.236.247.102']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-15T13:44:15.000Z",
+            "modified": "2023-12-18T00:46:48.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--e57cbc4e-3262-57f0-8b01-000051204254",
+            "type": "indicator",
+            "pulsedive_risk": "low",
+            "pulsedive_risk_int": 1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-18T00:46:23.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Low risk of malicious activity.",
+            "valid_from": "2023-09-15T13:44:15.000Z",
+            "valid_until": "2023-12-18T00:46:23.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'easywinscp.xyz']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-15T13:44:15.000Z",
+            "modified": "2023-12-18T00:46:23.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--81e28d59-3649-503e-842c-000051330541",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[ipv4-addr:value = '5.34.178.21']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--82da6bd0-47b0-5436-9e0d-000051330542",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'avayacloud.com.global.prod.fastly.net']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--5fc21583-3365-57d8-866b-000051330543",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[ipv4-addr:value = '45.89.65.198']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--221aa250-cac7-5692-aa1c-000051330544",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'drkgatevservicceoffice.net']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--4926004f-f62c-5375-b0e9-000051330545",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'intranet.mcasavaya.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--ae0ce172-cdf8-5367-84ba-000051330546",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[ipv4-addr:value = '89.248.193.66']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--44cae891-90b1-5155-805c-000051330547",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'onlysportsfitnessam.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--9c8c3425-3559-5e01-9099-000051330548",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 0,
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[ipv4-addr:value = '149.248.0.82']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2026-03-26T00:41:29.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--6f8643e7-1476-5d6f-8d8b-000051330549",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'reactervnamnat.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--f8218569-25ea-5787-98db-000051330550",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'sanibroadbandcommunicton.duckdns.org']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--a1ebc4d4-a26c-5073-aeb8-000051330551",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[ipv4-addr:value = '185.8.106.231']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--76a87e21-8059-539a-a8db-000051330552",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'xfirecovery.pro']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--54f57da3-43da-55a0-85de-000051330553",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[ipv4-addr:value = '185.143.223.64']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--9ab6fee6-7c1e-5c80-8d70-000051330554",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-04-21T18:37:13.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-17T15:07:15.000Z",
+            "valid_until": "2024-04-21T18:37:13.000Z",
+            "pattern": "[domain-name:value = 'a-1bcdn.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-17T15:07:15.000Z",
+            "modified": "2024-04-21T18:37:13.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--42c97159-aa8e-5e98-aefe-000051365703",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-01-27T10:25:20.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-18T04:22:24.000Z",
+            "valid_until": "2024-01-27T10:25:20.000Z",
+            "pattern": "[ipv4-addr:value = '46.173.215.132']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-18T04:22:24.000Z",
+            "modified": "2024-01-27T10:25:20.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--142d72af-2f3c-5b77-96a3-000051496904",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T03:54:44.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2024-03-21T03:54:44.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'a2zfortextile.com']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2024-03-21T03:54:44.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--b8aced43-a917-5f66-8171-000051496905",
+            "type": "indicator",
+            "pulsedive_risk": "none",
+            "pulsedive_risk_int": -1,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T03:54:44.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very low risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2024-03-21T03:54:44.000Z",
+            "indicator_types": [
+                "benign"
+            ],
+            "pattern": "[domain-name:value = 'elburro.net']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2024-03-21T03:54:44.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--b413ec42-1d04-5b0d-bdd3-000051496907",
+            "type": "indicator",
+            "pulsedive_risk": "high",
+            "pulsedive_risk_int": 3,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-24T05:48:16.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "High risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2023-12-24T05:48:16.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'http:\/\/94.228.169.123\/7qA\/123']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2023-12-24T05:48:16.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--71241f5a-dccd-519c-842c-000051496908",
+            "type": "indicator",
+            "pulsedive_risk": "critical",
+            "pulsedive_risk_int": 4,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T04:03:25.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very high risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2024-03-21T04:03:25.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'http:\/\/94.228.169.143:2351\/']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2024-03-21T04:03:25.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--40a71bfc-ce04-5b91-80da-000051496909",
+            "type": "indicator",
+            "pulsedive_risk": "critical",
+            "pulsedive_risk_int": 4,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-24T05:48:16.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very high risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2023-12-24T05:48:16.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'http:\/\/94.228.169.143:2351\/bpzszuqi']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2023-12-24T05:48:16.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--fffd517e-f90d-59b6-bd88-000051496910",
+            "type": "indicator",
+            "pulsedive_risk": "critical",
+            "pulsedive_risk_int": 4,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-24T05:48:16.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Very high risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2023-12-24T05:48:16.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'http:\/\/94.228.169.143:2351\/msibpzszuqi']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2023-12-24T05:48:16.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--9b23429f-0717-54c8-86c6-000051496912",
+            "type": "indicator",
+            "pulsedive_risk": "unknown",
+            "pulsedive_risk_int": 0,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2023-12-24T05:44:07.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Unknown risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2023-12-24T05:44:07.000Z",
+            "pattern": "[url:value = 'https:\/\/a2zfortextile.com\/aeu\/']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2023-12-24T05:44:07.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        },
+        {
+            "id": "indicator--bdcf2130-ed1b-5acd-86cb-000051496913",
+            "type": "indicator",
+            "pulsedive_risk": "medium",
+            "pulsedive_risk_int": 2,
+            "pulsedive_retired": 1,
+            "pulsedive_retired_timestamp": "2024-03-21T04:01:59.000Z",
+            "pulsedive_retired_reason": "",
+            "name": "Detection Pattern",
+            "description": "Medium risk of malicious activity.",
+            "valid_from": "2023-09-22T15:10:27.000Z",
+            "valid_until": "2024-03-21T04:01:59.000Z",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'https:\/\/elburro.net\/ofm\/']",
+            "pattern_type": "stix",
+            "extensions": {
+                "extension-definition--c58a936d-f97f-545b-9646-434cc3382126": {
+                    "extension_type": "toplevel-property-extension"
+                }
+            },
+            "created": "2023-09-22T15:10:27.000Z",
+            "modified": "2024-03-21T04:01:59.000Z",
+            "created_by_ref": "identity--5c9fb347-238c-5b07-bae0-93fe6972689d",
+            "spec_version": "2.1",
+            "lang": "en"
+        }
+    ]
+}
